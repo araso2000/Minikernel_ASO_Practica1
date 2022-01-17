@@ -1,0 +1,167 @@
+init: comienza
+-> PROC 0: CREAR PROCESO
+init: termina
+-> FIN PROCESO 0
+-> C.CONTEXTO POR FIN: de 0 a 1
+prueba_mutex1: comienza
+-> PROC 1: CREAR PROCESO
+-> PROC 1: CREAR PROCESO
+-> PROC 1: CREAR PROCESO
+-> PROC 1: CREAR PROCESO
+-> PROC 1: CREAR PROCESO
+prueba_mutex1: termina
+-> FIN PROCESO 1
+-> C.CONTEXTO POR FIN: de 1 a 0
+creador1 comienza
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+Nombre no disponible, ya está en uso
+error creando m1. DEBE SALIR
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+creador1 duerme 1 segundo
+creador2 comienza
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+creador2 duerme 1 segundo
+creador3 comienza
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+creador3 duerme 1 segundo
+creador4 comienza
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+creador4 duerme 1 segundo
+abridor comienza
+Abriendo mutex
+No existe el mutex
+error abriendo m0. DEBE SALIR
+Abriendo mutex
+Mutex encontrado
+Abriendo mutex
+Mutex encontrado
+Abriendo mutex
+Mutex encontrado
+Abriendo mutex
+Mutex encontrado
+Abriendo mutex
+No quedan descriptores disponibles, el proceso ha llegado al maximo de descriptores por proceso permitido
+error abriendo m5. DEBE SALIR
+Cerrando mutex
+Mutex cerrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+Nombre no disponible, ya está en uso
+error creando m17. DEBE SALIR
+abridor termina
+-> FIN PROCESO 5
+-> C.CONTEXTO POR FIN: de 5 a 0
+El proceso 0 se despierta
+creador1 termina
+-> FIN PROCESO 0
+-> C.CONTEXTO POR FIN: de 0 a 2
+El proceso 2 se despierta
+creador2 termina
+-> FIN PROCESO 2
+-> C.CONTEXTO POR FIN: de 2 a 3
+El proceso 3 se despierta
+creador3 termina
+-> FIN PROCESO 3
+-> C.CONTEXTO POR FIN: de 3 a 4
+El proceso 4 se despierta
+creador4 termina
+-> FIN PROCESO 4

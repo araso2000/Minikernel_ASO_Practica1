@@ -1,0 +1,28 @@
+init: comienza
+-> PROC 0: CREAR PROCESO
+init: termina
+-> FIN PROCESO 0
+-> C.CONTEXTO POR FIN: de 0 a 1
+prueba_RR2: comienza
+-> PROC 1: CREAR PROCESO
+-> PROC 1: CREAR PROCESO
+-> PROC 1: CREAR PROCESO
+-> PROC 1: CREAR PROCESO
+-> PROC 1: CREAR PROCESO
+prueba_RR2: termina
+-> FIN PROCESO 1
+-> C.CONTEXTO POR FIN: de 1 a 0
+mudo (2): termina con 99999995
+-> FIN PROCESO 2
+-> C.CONTEXTO POR FIN: de 2 a 3
+mudo (4): termina con 99999995
+-> FIN PROCESO 4
+-> C.CONTEXTO POR FIN: de 4 a 5
+mudo (5): termina con 99999995
+-> FIN PROCESO 5
+-> C.CONTEXTO POR FIN: de 5 a 0
+mudo (0): termina con 99999995
+-> FIN PROCESO 0
+-> C.CONTEXTO POR FIN: de 0 a 3
+mudo (3): termina con 99999995
+-> FIN PROCESO 3

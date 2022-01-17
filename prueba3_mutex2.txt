@@ -1,0 +1,46 @@
+init: comienza
+-> PROC 0: CREAR PROCESO
+init: termina
+-> FIN PROCESO 0
+-> C.CONTEXTO POR FIN: de 0 a 1
+prueba_mutex comienza
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+LOCK init
+El mutex no existe
+error en lock de mutex. DEBE APARECER
+Creando mutex
+Comprobando si el nombre del mutex es mas largo de 8 caracteres
+No existe un mutex con ese nombre. Creando nuevo mutex
+Creando mutex
+Abriendo mutex
+Mutex encontrado
+LOCK init
+LOCK finish
+LOCK init
+El mutex no es recursivo
+segundo lock en mutex no recursivo. DEBE APARECER
+LOCK init
+LOCK finish
+LOCK init
+LOCK finish
+-> PROC 1: CREAR PROCESO
+-> PROC 1: CREAR PROCESO
+prueba_mutex duerme 1 seg.: ejecutarán los procesos mutex1 y mutex2 que se bloquearán en lock de mutex
+mutex1 comienza
+Abriendo mutex
+Mutex encontrado
+LOCK init
+mutex2 comienza
+Abriendo mutex
+Mutex encontrado
+Abriendo mutex
+Mutex encontrado
+LOCK init
+El proceso 1 se despierta
+Cerrando mutex
+Liberando procesos bloqueados en el mutex m2

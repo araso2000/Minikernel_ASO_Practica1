@@ -1,0 +1,63 @@
+#!/bin/bash
+
+find . -name "*.txt" -type f -delete
+
+echo Moviendo init.c original
+mv ./usuario/init.c ./inits
+
+echo Primera prueba - Dormir
+cp ./inits/init1.c ./usuario
+cd usuario
+mv init1.c init.c
+cd ..
+find . -name "*.o" -type f -delete
+make
+boot/boot minikernel/kernel >> prueba1_dormir.txt
+
+echo Segunda prueba - Mutex_1
+rm ./usuario/init.c
+cp ./inits/init2.c ./usuario
+cd usuario
+mv init2.c init.c
+cd ..
+find . -name "*.o" -type f -delete
+make
+boot/boot minikernel/kernel >> prueba2_mutex1.txt
+
+echo Tercera prueba - Mutex_2
+rm ./usuario/init.c
+cp ./inits/init3.c ./usuario
+cd usuario
+mv init3.c init.c
+cd ..
+find . -name "*.o" -type f -delete
+make
+boot/boot minikernel/kernel >> prueba3_mutex2.txt
+
+echo Cuarta prueba - Round_Robin_1
+rm ./usuario/init.c
+cp ./inits/init4.c ./usuario
+cd usuario
+mv init4.c init.c
+cd ..
+find . -name "*.o" -type f -delete
+make
+boot/boot minikernel/kernel >> prueba4_round1.txt
+
+
+echo Quinta prueba - Round_Robin_2
+rm ./usuario/init.c
+cp ./inits/init5.c ./usuario
+cd usuario
+mv init5.c init.c
+cd ..
+find . -name "*.o" -type f -delete
+make
+boot/boot minikernel/kernel >> prueba5_round2.txt
+
+echo Restaurando init.c original
+rm ./usuario/init.c
+mv ./inits/init.c ./usuario
+find . -name "*.o" -type f -delete
+
+echo FIN
